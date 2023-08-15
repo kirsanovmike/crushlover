@@ -93,7 +93,7 @@ export default {
         .open(
           `${
             process.env.NODE_ENV === "production" ? "/crushlover/" : "/"
-          }?document=terms-and-conditions`,
+          }?document=terms-of-use`,
           "_blank"
         )
         .focus();

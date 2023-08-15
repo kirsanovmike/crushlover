@@ -82,7 +82,7 @@ export default {
       return this.$route.query.document === "privacy-policy";
     },
     showTerms() {
-      return this.$route.query.document === "terms-and-conditions";
+      return this.$route.query.document === "terms-of-use";
     },
   },
 
