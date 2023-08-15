@@ -1,14 +1,17 @@
 <template>
-  <PDFViewer loading-text="Loading" rendering-text="Loading" :source="fileBase64" style="height: 100vh; width: 100vw" />
+    <!-- <PDFViewer loading-text="Loading" rendering-text="Loading" :source="fileBase64" style="height: 100vh; width: 100vw" /> -->
+    <vue-pdf-embed loading-text="Loading" rendering-text="Loading" :source="fileBase64" style="height: 100vh; width: 100vw" />
 </template>
 
 <script>
-import PDFViewer from "pdf-viewer-vue/dist/vue2-pdf-viewer";
+// import PDFViewer from "pdf-viewer-vue/dist/vue2-pdf-viewer";
+import VuePdfEmbed from 'vue-pdf-embed/dist/vue2-pdf-embed'
 
 export default {
   name: "TermsAndConditions",
   components: {
-    PDFViewer,
+    // PDFViewer,
+    VuePdfEmbed,
   },
   data() {
     return {
